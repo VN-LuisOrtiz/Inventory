@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ModifyPartController">
+   <children>
+      <Label layoutX="14.0" layoutY="24.0" prefHeight="27.0" prefWidth="111.0" text="Modify Part" textFill="#2e13e1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="inRadio" layoutX="148.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#inClick" prefHeight="17.0" prefWidth="90.0" text="In-House" />
+      <RadioButton fx:id="outRadio" layoutX="293.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#outClick" prefHeight="17.0" prefWidth="90.0" text="Outsourced" />
+      <Label layoutX="48.0" layoutY="103.0" prefHeight="20.0" prefWidth="43.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="148.0" prefHeight="20.0" prefWidth="43.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="197.0" prefHeight="20.0" prefWidth="43.0" text="Inv">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="250.0" prefHeight="20.0" prefWidth="77.0" text="Price/Cost">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="302.0" prefHeight="20.0" prefWidth="77.0" text="Max">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="306.0" layoutY="302.0" prefHeight="20.0" prefWidth="77.0" text="Min">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="twoLabels" layoutX="48.0" layoutY="368.0" opacity="0.0" prefHeight="20.0" prefWidth="111.0" text="Two Labels">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="selectedPartID" layoutX="159.0" layoutY="101.0" prefHeight="17.0" prefWidth="111.0" />
+      <TextField fx:id="selectedPartName" layoutX="159.0" layoutY="146.0" prefHeight="17.0" prefWidth="111.0" />
+      <TextField fx:id="selectedPartStock" layoutX="159.0" layoutY="195.0" prefHeight="17.0" prefWidth="111.0" />
+      <TextField fx:id="selectedPartPrice" layoutX="159.0" layoutY="248.0" prefHeight="17.0" prefWidth="111.0" />
+      <TextField fx:id="selectedPartMax" layoutX="159.0" layoutY="300.0" prefHeight="17.0" prefWidth="111.0" />
+      <TextField fx:id="selectedPartMin" layoutX="345.0" layoutY="300.0" prefHeight="17.0" prefWidth="111.0" />
+      <TextField fx:id="selectedCompanyName" disable="true" layoutX="159.0" layoutY="366.0" opacity="0.0" prefHeight="25.0" prefWidth="139.0" />
+      <Button fx:id="saveIn" disable="true" layoutX="267.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#saveInButton" opacity="0.0" text="SAVEIN" />
+      <Button layoutX="368.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#goBack" text="Cancel" />
+      <TextField fx:id="selectedMachineID" disable="true" layoutX="159.0" layoutY="366.0" opacity="0.0" prefHeight="25.0" prefWidth="139.0" />
+      <Button fx:id="saveOut" disable="true" layoutX="267.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#saveOutButton" opacity="0.0" text="Save" />
+   </children>
+</AnchorPane>
