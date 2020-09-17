@@ -16,4 +16,4 @@ If the user selects “In-House,” the “Machine ID” field is available.
 For the Modify Product Screen:
 The “Modify Product” screen has the same functionality as the “Add Product” screen, but the parts and fields are populated with data that was previously entered and saved.  
 
-Additionally, please refer to the "UML Diagram" pdf.
+Additionally, please refer to the "UML Diagram" and "Requirements" files for more details.
